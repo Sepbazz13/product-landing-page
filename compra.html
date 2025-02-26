@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+</head>
+<body>
+    <div class="container" role="application">
+        <header>
+            <div class="logo" aria-label="Logo de la empresa">BURBERRY</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="compra.html" aria-current="page">Comprar</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-wrapper">
+            <aside>
+                <h3>Opciones de Compra</h3>
+                <nav class="side-nav" aria-label="Pasos de compra">
+                    <ul class="purchase-steps">
+                        <li class="active" aria-current="step">1. Selección de producto</li>
+                        <li>2. Opciones y variantes</li>
+                        <li>3. Información de envío</li>
+                        <li>4. Método de pago</li>
+                        <li>5. Confirmación</li>
+                    </ul>
+                </nav>
+                
+                <div class="purchase-summary">
+                    <h4>Resumen de compra</h4>
+                    <div class="summary-item">
+                        <span>Producto:</span>
+                        <span>Producto Premium</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Cantidad:</span>
+                        <span>1</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Precio:</span>
+                        <span>$199.99</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Envío:</span>
+                        <span>$12.50</span>
+                    </div>
+                    <div class="summary-item subtotal">
+                        <span>Total:</span>
+                        <span>$212.49</span>
+                    </div>
+                </div>
+                
+                <div class="estimated-delivery">
+                    <h4>Entrega estimada</h4>
+                    <p>Entre 3-5 días hábiles</p>
+                    <select name="shipping" id="shipping" aria-label="Opciones de envío">
+                        <option value="standard">Envío estándar (3-5 días)</option>
+                        <option value="express">Envío express (1-2 días)</option>
+                        <option value="sameday">Mismo día (solo CABA)</option>
+                    </select>
+                </div>
+            </aside>
+
+            <main>
+                <h1>Compra de Producto Premium</h1>
+                
+                <div class="product-details">
+                    <div class="product-image">
+                        <div class="image-container" id="product-image-container">
+                            <img src="img/producto-blanco.jpg" alt="Producto Premium en color blanco" id="product-img">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h2>Producto Premium</h2>
+                        <div class="product-rating" aria-label="4.9 de 5 estrellas, 42 reseñas">★★★★★ (42 reseñas)</div>
+                        <p class="product-price">$199.99</p>
+                        <p class="product-description">
+                            Este producto premium ofrece características excepcionales que lo hacen
+                            destacar entre la competencia. Diseñado con los mejores materiales y
+                            tecnología de vanguardia para garantizar durabilidad y rendimiento superior.
+                        </p>
+                        
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label for="color">Color:</label>
+                                <div class="color-buttons" aria-label="Seleccionar color">
+                                    <button type="button" class="color-btn white active" data-color="blanco" aria-label="Color blanco"></button>
+                                    <button type="button" class="color-btn black" data-color="negro" aria-label="Color negro"></button>
+                                    <button type="button" class="color-btn blue" data-color="azul" aria-label="Color azul"></button>
+                                </div>
+                                <select id="color" name="color" aria-label="Seleccionar color" style="display: none;">
+                                    <option value="blanco" selected>Blanco</option>
+                                    <option value="negro">Negro</option>
+                                    <option value="azul">Azul</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label for="size">Tamaño:</label>
+                                <select id="size" name="size" aria-label="Seleccionar tamaño">
+                                    <option value="s">Pequeño</option>
+                                    <option value="m" selected>Mediano</option>
+                                    <option value="l">Grande</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group quantity">
+                                <label for="quantity">Cantidad:</label>
+                                <div class="quantity-selector" role="spinbutton" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1">
+                                    <button type="button" class="quantity-btn" aria-label="Disminuir cantidad">-</button>
+                                    <input type="number" id="quantity" name="quantity" value="1" min="1" aria-label="Cantidad">
+                                    <button type="button" class="quantity-btn" aria-label="Aumentar cantidad">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn primary-btn">Agregar al carrito</button>
+                            <button class="btn secondary-btn">Comprar ahora</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="additional-info">
+                    <h3>Detalles del producto</h3>
+                    <p>Este producto incluye garantía de 1 año. Fabricado con materiales de alta calidad y probado en condiciones extremas para garantizar su durabilidad.</p>
+                    
+                    <h3>Opiniones de otros compradores</h3>
+                    <p>El 95% de nuestros clientes recomiendan este producto. Consulta la página de testimonios para ver todas las reseñas.</p>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Mi Proyecto Responsivo. Todos los derechos reservados.</p>
+            <p>Términos y condiciones | Política de privacidad | Ayuda</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageContainer = document.getElementById('product-image-container');
+            const productImg = document.getElementById('product-img');
+            const colorButtons = document.querySelectorAll('.color-btn');
+            const colorSelect = document.getElementById('color');
+            
+            let currentRotation = 0;
+            let currentColor = 'blanco';
+            
+            // Mapa de colores a rutas de imágenes
+            const colorImages = {
+                'blanco': './img/b02.webp',
+                'negro': 'img/n01.jpg',
+                'azul': 'img/b03.webp'
+            };
+            
+            // Función para cambiar la imagen y aplicar rotación
+            function changeColor(color) {
+                if (color !== currentColor) {
+                    // Actualizar rotación
+                    currentRotation += 360;
+                    imageContainer.style.transform = `rotateY(${currentRotation}deg)`;
+                    
+                    // Cambiar imagen después de la mitad de la rotación
+                    setTimeout(() => {
+                        productImg.src = colorImages[color];
+                        productImg.alt = `Producto Premium en color ${color}`;
+                    }, 300);
+                    
+                    // Actualizar color seleccionado
+                    currentColor = color;
+                    
+                    // Actualizar select de color (para mantener sincronización)
+                    colorSelect.value = color;
+                    
+                    // Actualizar botones activos
+                    colorButtons.forEach(btn => {
+                        if (btn.dataset.color === color) {
+                            btn.classList.add('active');
+                        } else {
+                            btn.classList.remove('active');
+                        }
+                    });
+                }
+            }
+            
+            // Evento para los botones de color
+            colorButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    changeColor(this.dataset.color);
+                });
+            });
+            
+            // Sincronizar con el select (si se usa)
+            colorSelect.addEventListener('change', function() {
+                changeColor(this.value);
+            });
+            
+            // Manejar eventos de cantidad
+            const quantityInput = document.getElementById('quantity');
+            const quantityBtns = document.querySelectorAll('.quantity-btn');
+            
+            quantityBtns.forEach((btn, index) => {
+                btn.addEventListener('click', function() {
+                    let currentVal = parseInt(quantityInput.value);
+                    
+                    if (index === 0 && currentVal > 1) { // Botón -
+                        quantityInput.value = currentVal - 1;
+                    } else if (index === 1 && currentVal < 10) { // Botón +
+                        quantityInput.value = currentVal + 1;
+                    }
+                    
+                    // Actualizar aria-valuenow
+                    quantityInput.parentElement.setAttribute('aria-valuenow', quantityInput.value);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

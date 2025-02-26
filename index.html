@@ -3,114 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nokia Indestructible</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <title>BURBERRY.PE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Menú principal">
-            <div>
-                <a href="./index.html" aria-label="Ir a la página de inicio">
-                    <p>Nokia indestructible</p>
-                </a>
-            </div>
-            <ul>
-                <li><a href="#" aria-current="page">Características</a></li>
-                <li><a href="#">Envios</a></li>
-                <li><a href="#">Pagos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
- 
-    <main>
-        <section id="hero" aria-labelledby="hero-title">
-            <img 
-                id="hero-image" 
-                src="./img/nokia.jpg" 
-                alt="Nokia indestructible"
-            />
-            <h1 id="hero-title">El Nokia indestructible</h1>
-            <div>
-                <p>El teléfono que sobrevive a todo</p>
-                <p>Una bomba o incluso al fin del mundo</p>
-            </div>
-        </section>
-
-        <section id="features">
-            <div>
-                <h3>Durabilidad</h3>
-                <p>El Nokia indestructible es el teléfono más resistente del mercado. Su carcasa de plástico duro y su pantalla de cristal irrompible lo hacen el teléfono perfecto para los más aventureros.</p>
-                <img src="./img/001.jpg" alt="Nokia indestructible - Prueba de durabilidad">
-            </div>
-            <div>
-                <h3>Batería</h3>
-                <p>La batería del Nokia indestructible dura hasta 1 semana sin necesidad de recargarla. Ideal para viajes largos o para olvidarte del cargador.</p>
-                <img src="./img/002.jpg" alt="Nokia - Batería de larga duración">
-            </div>
-            <div>
-                <h3>Resistencia al agua</h3>
-                <p>El Nokia indestructible es resistente al agua. Puedes sumergirlo hasta 1 metro de profundidad durante 30 minutos sin que le pase nada.</p>
-                <img src="./img/003.jpg" alt="Nokia - Prueba de resistencia al agua">
-            </div>
-        </section>
-
-        <section id="delivery"></section>
-        <section id="payment-methods"></section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Contacto</h4>
+    <div class="container" role="application">
+        <header>
+            <div class="logo" aria-label="Logo de la empresa">BURBERRY</div>
+            <nav class="main-nav" aria-label="Navegación principal">
                 <ul>
-                    <li>
-                        <strong>Email:</strong>
-                        <a href="mailto:soporte@nokiaindestructible.com">soporte@nokiaindestructible.com</a>
-                    </li>
-                    <li>
-                        <strong>Teléfono:</strong>
-                        <a href="tel:+34900123456">900 123 456</a>
-                    </li>
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="compra.html">Comprar</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
-            </div>
+            </nav>
+        </header>
 
-            <div class="footer-section">
-                <h4>Horario de Atención</h4>
-                <div class="business-hours">
-                    <span>Lunes - Viernes:</span>
-                    <span>9:00 - 18:00</span>
-                    <span>Sábados:</span>
-                    <span>10:00 - 14:00</span>
-                    <span>Domingos:</span>
-                    <span>Cerrado</span>
+        <div class="content-wrapper">
+            <aside>
+                <h3>Categorías</h3>
+                <nav class="side-nav" aria-label="Navegación de categorías">
+                    <ul>
+                        <li><a href="#" aria-label="Categoría 1">Categoría 1</a></li>
+                        <li><a href="#" aria-label="Categoría 2">Categoría 2</a></li>
+                        <li><a href="#" aria-label="Categoría 3">Categoría 3</a></li>
+                        <li><a href="#" aria-label="Categoría 4">Categoría 4</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="filter-section">
+                    <h4>Filtros rápidos</h4>
+                    <div class="filter-options">
+                        <label>
+                            <input type="checkbox" name="filter" value="populares"> Más populares
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter" value="nuevos"> Nuevos productos
+                        </label>
+                    </div>
                 </div>
-            </div>
+            </aside>
 
-            <div class="footer-section">
-                <h4>Enlaces Importantes</h4>
-                <ul>
-                    <li><a href="/terminos">Términos y condiciones</a></li>
-                    <li><a href="/privacidad">Política de privacidad</a></li>
-                    <li><a href="/garantia">Garantía</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Redes Sociales</h4>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/nokia/?locale=es_LA" aria-label="Síguenos en Facebook">
-                        <img src="./img/004.png" alt="Facebook">
-                    </a>
-                    <a href="https://x.com/nokia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Síguenos en Twitter">
-                        <img src="./img/006.webp" alt="Twitter">
-                    </a>
-                    <a href="https://www.instagram.com/nokia/" aria-label="Síguenos en Instagram">
-                        <img src="./img/005.png" alt="Instagram">
-                    </a>
+            <main>
+                <h1>Página Principal</h1>
+                <p>Pagina en construcción Burberry Perú</p>
+                
+                <div class="cards-container">
+                    <div class="card" tabindex="0">
+                        <h3>Post 1</h3>
+                        <p>Descripción breve del contenido. Esta grilla responde a diferentes tamaños de pantalla.</p>
+                    </div>
+                    <div class="card" tabindex="0">
+                        <h3>Post 2</h3>
+                        <p>Descripción breve del contenido. Esta grilla responde a diferentes tamaños de pantalla.</p>
+                    </div>
+                    <div class="card" tabindex="0">
+                        <h3>Post 3</h3>
+                        <p>Descripción breve del contenido. Esta grilla responde a diferentes tamaños de pantalla.</p>
+                    </div>
                 </div>
-            </div>
+            </main>
         </div>
-    </footer>
+
+        <footer>
+            <p>&copy; 2025 Mi Proyecto Responsivo. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>

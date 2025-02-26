@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonios</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <div class="container" role="application">
+        <header>
+            <div class="logo" aria-label="Logo de la empresa">BURBERRY</div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="testimonios.html" aria-current="page">Testimonios</a></li>
+                    <li><a href="compra.html">Comprar</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-wrapper">
+            <aside>
+                <h3>Filtrar Testimonios</h3>
+                <nav class="side-nav" aria-label="Filtros de testimonios">
+                    <ul>
+                        <li>
+                            <label for="recientes">
+                                <input type="checkbox" id="recientes" name="filter" value="recientes"> Más recientes
+                            </label>
+                        </li>
+                        <li>
+                            <label for="5estrellas">
+                                <input type="checkbox" id="5estrellas" name="filter" value="5estrellas"> 5 estrellas
+                            </label>
+                        </li>
+                        <li>
+                            <label for="4estrellas">
+                                <input type="checkbox" id="4estrellas" name="filter" value="4estrellas"> 4 estrellas
+                            </label>
+                        </li>
+                        <li>
+                            <label for="3estrellas">
+                                <input type="checkbox" id="3estrellas" name="filter" value="3estrellas"> 3 estrellas o menos
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="filter-section">
+                    <h4>Categoría</h4>
+                    <select name="categoria" id="categoria" aria-label="Filtrar por categoría">
+                        <option value="">Todas las categorías</option>
+                        <option value="producto1">Producto 1</option>
+                        <option value="producto2">Producto 2</option>
+                        <option value="servicio">Servicio</option>
+                    </select>
+                </div>
+                
+                <div class="filter-section">
+                    <h4>Ordenar por</h4>
+                    <select name="ordenar" id="ordenar" aria-label="Ordenar testimonios">
+                        <option value="reciente">Más recientes</option>
+                        <option value="valoracion">Mayor valoración</option>
+                        <option value="relevancia">Relevancia</option>
+                    </select>
+                </div>
+            </aside>
+
+            <main>
+                <h1>Testimonios de nuestros clientes</h1>
+                <p>Conoce las experiencias de quienes ya han usado nuestros productos y servicios.</p>
+                
+                <div class="testimonials-grid" role="list">
+                    <div class="testimonial-card" role="listitem" tabindex="0">
+                        <div class="testimonial-header">
+                            <div class="user-info">
+                                <h3>Ana García</h3>
+                                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                            </div>
+                            <span class="date">12 Ene 2025</span>
+                        </div>
+                        <p>Excelente producto, supera todas mis expectativas. Lo recomiendo totalmente para cualquiera que necesite una solución confiable.</p>
+                    </div>
+                    
+                    <div class="testimonial-card" role="listitem" tabindex="0">
+                        <div class="testimonial-header">
+                            <div class="user-info">
+                                <h3>Carlos Pérez</h3>
+                                <div class="stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+                            </div>
+                            <span class="date">5 Feb 2025</span>
+                        </div>
+                        <p>Muy buen servicio, aunque podría mejorar en algunos aspectos. El soporte técnico fue rápido y amable.</p>
+                    </div>
+                    
+                    <div class="testimonial-card" role="listitem" tabindex="0">
+                        <div class="testimonial-header">
+                            <div class="user-info">
+                                <h3>María López</h3>
+                                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                            </div>
+                            <span class="date">23 Ene 2025</span>
+                        </div>
+                        <p>Increíble relación calidad-precio. Lo he recomendado a todos mis amigos y familiares.</p>
+                    </div>
+                    
+                    <div class="testimonial-card" role="listitem" tabindex="0">
+                        <div class="testimonial-header">
+                            <div class="user-info">
+                                <h3>Juan Rodríguez</h3>
+                                <div class="stars" aria-label="3 de 5 estrellas">★★★☆☆</div>
+                            </div>
+                            <span class="date">17 Feb 2025</span>
+                        </div>
+                        <p>El producto cumple con lo básico, pero esperaba algo más por el precio pagado. El envío fue rápido, eso sí.</p>
+                    </div>
+                    
+                    <div class="testimonial-card" role="listitem" tabindex="0">
+                        <div class="testimonial-header">
+                            <div class="user-info">
+                                <h3>Elena Torres</h3>
+                                <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                            </div>
+                            <span class="date">2 Feb 2025</span>
+                        </div>
+                        <p>Fácil de usar y muy intuitivo. Me ha permitido ahorrar mucho tiempo en mis tareas diarias.</p>
+                    </div>
+                    
+                    <div class="testimonial-card" role="listitem" tabindex="0">
+                        <div class="testimonial-header">
+                            <div class="user-info">
+                                <h3>Roberto Sánchez</h3>
+                                <div class="stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+                            </div>
+                            <span class="date">10 Feb 2025</span>
+                        </div>
+                        <p>Buen producto en general. La atención al cliente es excelente, aunque el manual podría ser más claro.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Mi Proyecto Responsivo. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
